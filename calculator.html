@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <script>
+        function calculator(){
+            var a = parseFloat(document.getElementById("bon").value);
+            var b = parseFloat(document.getElementById("von").value);
+            var sign = document.getElementById("pon").value;
+        if ( sign === '+') {
+            document.getElementById("demo").value = a+b;
+        }
+        if ( sign === '-') {
+            document.getElementById("demo").value = a-b;
+        }
+        if ( sign === '*') {
+            document.getElementById("demo").value = a*b;
+        }
+        if ( sign === '/') {
+            document.getElementById("demo").value = a/b;
+        }
+        }
+
+
+        
+      
+
+    </script>
+
+    <style>
+     form{
+         margin-top: 100px;
+     } 
+
+     body{
+         background-color: powderblue;
+         zoom: 200%;
+     }
+     
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+   <center><h1>OUR FIRST CALCULATOR: GROUP C</h1></center>
+<center>
+    <div class="form">
+    <input  id="bon"type="number"> 
+    <select id="pon">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+    </select>
+
+
+    <input id="von" type="number">
+    <br><br>
+    <button onclick="calculator()">submit</button>
+    <br><br>
+    <input  id="demo" disabled>
+
+    <br><br>
+    <button onclick="document.getElementById('form').innerHTML= Date()">Time</button>
+    <p id="form"></p>
+</center>
+</div>
+
+</body>
+</html>
+

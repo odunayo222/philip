@@ -1,0 +1,91 @@
+<html>
+<head>
+    <style>
+      
+        input{
+            height: 45px;
+            width: 80px;
+            background-color: #808080;
+            font-size: 20px;
+        }
+        #kol{
+            background-color: white; 
+            width: 130px;
+            
+           
+            width: 250px;
+        }
+        footer{
+            background-color: darkblue;
+            padding: 15px;
+            margin-top: 45px;
+        }
+        footer p{
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+        }
+        .container{
+           background-color: powderblue;
+           height: 450px;
+           width: 400px;
+           border-radius: 67px;
+           padding-top: 60px;
+           te
+        }
+       
+    </style>
+    <title>Hope</title>
+</head>
+<body>
+        <center><h1>CALCULATOR</h1></center>
+        <div class="container">
+    <form name="calc">
+        <div class="ola">
+        <input name="show" disabled id="kol">
+        <br><br>
+    
+        <table>
+            <tr>
+                <td><input type="button" name="1" value="1" onclick="calc.show.value += '1'"></td>
+                <td><input type="button" name="2" value="2" onclick="calc.show.value += '2'"></td>
+                <td><input type="button" name="3" value="3" onclick="calc.show.value += '3'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="4" value="4" onclick="calc.show.value += '4'"></td>
+                <td><input type="button" name="5" value="5" onclick="calc.show.value += '5'"></td>
+                <td><input type="button" name="6" value="6" onclick="calc.show.value += '6'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="7" value="7" onclick="calc.show.value += '7'"></td>
+                <td><input type="button" name="8" value="8" onclick="calc.show.value += '8'"></td>
+                <td><input type="button" name="9" value="9" onclick="calc.show.value += '9'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="0" value="0" onclick="calc.show.value += '0'"></td>
+                <td><input type="button" name="+" value="+" onclick="calc.show.value += '+'"></td>
+                <td><input type="button" name="-" value="-" onclick="calc.show.value += '-'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="*" value="*" onclick="calc.show.value += '*'"></td>
+                <td><input type="button" name="/" value="/" onclick="calc.show.value += '/'"></td>
+                <td><input type="button" name="=" value="=" onclick="calc.show.value = eval(calc.show.value)"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" name="C" value="C" onclick="calc.show.value = '' "></td>
+                <td><input type="button" name="AC" value="AC" onclick="calc.show.value = ' ' "></td>
+                <td><input type="button" name="." value="." onclick="calc.show.value += '.' "></td>
+            </tr>
+        </table>
+        </div>
+    </form>
+    </div>
+    
+    <footer>
+     &copy; DESIGNED BY ODUNAYO AJAYI
+
+    </footer>
+
+</body>
+</html>

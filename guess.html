@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess</title>
+</head>
+<body style="background-color: pink;">
+<p id="demo"></p>
+
+
+</body>
+
+
+<script>
+    function dop(){
+    var odun = prompt("guess any letter");
+    var guess = ['g','o','a','t'];
+    if(odun === guess[0]){
+    return '<h1 style="text-align: center;margin-top: 200px;">Congratulation you find letter</h1>';
+    }
+    if(odun === guess[1]){
+    return '<h1 style="text-align: center;margin-top: 200px;">Congratulation you find a letter </h1>';
+    }
+    if(odun === guess[2]){
+    return '<h1 style="text-align: center;margin-top: 200px;">Congratulation you find letter</h1>';
+    }
+    if(odun === guess[3]){
+    return '<h1 style="text-align: center;margin-top: 200px;">Congratulation you find letter</h1>';
+    }
+    else{
+     return '<h1 style="text-align: center;margin-top: 200px;">Not found</h1>';
+    }
+    
+    }
+    document.getElementById("demo").innerHTML = dop();
+    </script>
+    
+</html>
